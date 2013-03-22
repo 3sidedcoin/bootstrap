@@ -8,7 +8,7 @@
 
 table {
   max-width: 100%;
-  background-color: @tableBackground;
+//  background-color: @tableBackground;
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -18,22 +18,22 @@ table {
 
 .table {
   width: 100%;
-  margin-bottom: @baseLineHeight;
+//  margin-bottom: @baseLineHeight;
   // Cells
   th,
   td {
-    padding: 8px;
-    line-height: @baseLineHeight;
+  //  padding: 8px;
+  //  line-height: @baseLineHeight;
     text-align: left;
     vertical-align: top;
-    border-top: 1px solid @tableBorder;
+  //  border-top: 1px solid @tableBorder;
   }
   th {
-    font-weight: bold;
+  //  font-weight: bold;
   }
   // Bottom align for column headings
   thead th {
-    vertical-align: bottom;
+  //  vertical-align: bottom;
   }
   // Remove top border from thead by default
   caption + thead tr:first-child th,
@@ -42,16 +42,16 @@ table {
   colgroup + thead tr:first-child td,
   thead:first-child tr:first-child th,
   thead:first-child tr:first-child td {
-    border-top: 0;
+  //  border-top: 0;
   }
   // Account for multiple tbody instances
   tbody + tbody {
-    border-top: 2px solid @tableBorder;
+  //  border-top: 2px solid @tableBorder;
   }
 
   // Nesting
   .table {
-    background-color: @bodyBackground;
+  //  background-color: @bodyBackground;
   }
 }
 
@@ -75,11 +75,11 @@ table {
   border: 1px solid @tableBorder;
   border-collapse: separate; // Done so we can round those corners!
   *border-collapse: collapse; // IE7 can't round corners anyway
-  border-left: 0;
-  .border-radius(@baseBorderRadius);
+//  border-left: 0;
+//  .border-radius(@baseBorderRadius);
   th,
   td {
-    border-left: 1px solid @tableBorder;
+  //  border-left: 1px solid @tableBorder;
   }
   // Prevent a double border
   caption + thead tr:first-child th,
@@ -91,19 +91,19 @@ table {
   thead:first-child tr:first-child th,
   tbody:first-child tr:first-child th,
   tbody:first-child tr:first-child td {
-    border-top: 0;
+  //  border-top: 0;
   }
   // For first th/td in the first row in the first thead or tbody
   thead:first-child tr:first-child > th:first-child,
   tbody:first-child tr:first-child > td:first-child,
   tbody:first-child tr:first-child > th:first-child {
-    .border-top-left-radius(@baseBorderRadius);
+  //  .border-top-left-radius(@baseBorderRadius);
   }
   // For last th/td in the first row in the first thead or tbody
   thead:first-child tr:first-child > th:last-child,
   tbody:first-child tr:first-child > td:last-child,
   tbody:first-child tr:first-child > th:last-child {
-    .border-top-right-radius(@baseBorderRadius);
+  //  .border-top-right-radius(@baseBorderRadius);
   }
   // For first th/td (can be either) in the last row in the last thead, tbody, and tfoot
   thead:last-child tr:last-child > th:first-child,
@@ -111,7 +111,7 @@ table {
   tbody:last-child tr:last-child > th:first-child,
   tfoot:last-child tr:last-child > td:first-child,
   tfoot:last-child tr:last-child > th:first-child {
-    .border-bottom-left-radius(@baseBorderRadius);
+  //  .border-bottom-left-radius(@baseBorderRadius);
   }
   // For last th/td (can be either) in the last row in the last thead, tbody, and tfoot
   thead:last-child tr:last-child > th:last-child,
@@ -119,15 +119,15 @@ table {
   tbody:last-child tr:last-child > th:last-child,
   tfoot:last-child tr:last-child > td:last-child,
   tfoot:last-child tr:last-child > th:last-child {
-    .border-bottom-right-radius(@baseBorderRadius);
+  //  .border-bottom-right-radius(@baseBorderRadius);
   }
 
   // Clear border-radius for first and last td in the last row in the last tbody for table with tfoot
   tfoot + tbody:last-child tr:last-child td:first-child {
-    .border-bottom-left-radius(0);
+  //  .border-bottom-left-radius(0);
   }
   tfoot + tbody:last-child tr:last-child td:last-child {
-    .border-bottom-right-radius(0);
+  //  .border-bottom-right-radius(0);
   }
 
   // Special fixes to round the left border on the first td/th
@@ -135,13 +135,13 @@ table {
   caption + tbody tr:first-child td:first-child,
   colgroup + thead tr:first-child th:first-child,
   colgroup + tbody tr:first-child td:first-child {
-    .border-top-left-radius(@baseBorderRadius);
+  //  .border-top-left-radius(@baseBorderRadius);
   }
   caption + thead tr:first-child th:last-child,
   caption + tbody tr:first-child td:last-child,
   colgroup + thead tr:first-child th:last-child,
   colgroup + tbody tr:first-child td:last-child {
-    .border-top-right-radius(@baseBorderRadius);
+  //  .border-top-right-radius(@baseBorderRadius);
   }
 
 }
@@ -170,7 +170,7 @@ table {
   tbody {
     tr:hover > td,
     tr:hover > th {
-      background-color: @tableBackgroundHover;
+    //  background-color: @tableBackgroundHover;
     }
   }
 }
@@ -230,15 +230,15 @@ table th[class*="span"],
 // Hover states for .table-hover
 .table-hover tbody tr {
   &.success:hover > td {
-    background-color: darken(@successBackground, 5%);
+  //  background-color: darken(@successBackground, 5%);
   }
   &.error:hover > td {
-    background-color: darken(@errorBackground, 5%);
+  //  background-color: darken(@errorBackground, 5%);
   }
   &.warning:hover > td {
-    background-color: darken(@warningBackground, 5%);
+  //  background-color: darken(@warningBackground, 5%);
   }
   &.info:hover > td {
-    background-color: darken(@infoBackground, 5%);
+  //  background-color: darken(@infoBackground, 5%);
   }
 }
